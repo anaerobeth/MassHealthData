@@ -1,0 +1,55 @@
+<h1>Listing town_health_records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Geography</th>
+      <th>Total pop year 2005</th>
+      <th>Age 0 9 year 2005</th>
+      <th>Age 65 above year 2005</th>
+      <th>Per capita income year 2000</th>
+      <th>Persons living below 200 percent poverty year 2000</th>
+      <th>Percent all persons living below 200 percent poverty level year 2000</th>
+      <th>Percent adequacy prenatal care  kotelchuck </th>
+      <th>Percent c section deliveries 2005 2008</th>
+      <th>Number of infant deaths 2005 2008</th>
+      <th>Infant mortality rate  deaths per 1000 live births  2005 2008</th>
+      <th>Percent low birthweight 2005 2008</th>
+      <th>Percent multiple births 2005 2008</th>
+      <th>Percent publicly financed prenatal care 2005 2008</th>
+      <th>Percent teen births 2005 2008</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @town_health_records.each do |town_health_record| %>
+      <tr>
+        <td><%= town_health_record.geography %></td>
+        <td><%= town_health_record.total_pop_year_2005 %></td>
+        <td><%= town_health_record.age_0_9_year_2005 %></td>
+        <td><%= town_health_record.age_65_above_year_2005 %></td>
+        <td><%= town_health_record.per_capita_income_year_2000 %></td>
+        <td><%= town_health_record.persons_living_below_200_percent_poverty_year_2000 %></td>
+        <td><%= town_health_record.percent_all_persons_living_below_200_percent_poverty_level_year_2000 %></td>
+        <td><%= town_health_record.percent_adequacy_prenatal_care__kotelchuck_ %></td>
+        <td><%= town_health_record.percent_c_section_deliveries_2005_2008 %></td>
+        <td><%= town_health_record.number_of_infant_deaths_2005_2008 %></td>
+        <td><%= town_health_record.infant_mortality_rate__deaths_per_1000_live_births__2005_2008 %></td>
+        <td><%= town_health_record.percent_low_birthweight_2005_2008 %></td>
+        <td><%= town_health_record.percent_multiple_births_2005_2008 %></td>
+        <td><%= town_health_record.percent_publicly_financed_prenatal_care_2005_2008 %></td>
+        <td><%= town_health_record.percent_teen_births_2005_2008 %></td>
+        <td><%= link_to 'Show', town_health_record %></td>
+        <td><%= link_to 'Edit', edit_town_health_record_path(town_health_record) %></td>
+        <td><%= link_to 'Destroy', town_health_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Town health record', new_town_health_record_path %>

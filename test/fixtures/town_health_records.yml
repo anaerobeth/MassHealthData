@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  geography: MyString
+  total_pop_year_2005: 1
+  age_0_9_year_2005: 1
+  age_65_above_year_2005: 1
+  per_capita_income_year_2000: 1.5
+  persons_living_below_200_percent_poverty_year_2000: 1
+  percent_all_persons_living_below_200_percent_poverty_level_year_2000: 1.5
+  percent_adequacy_prenatal_care__kotelchuck_: 1.5
+  percent_c_section_deliveries_2005_2008: 1.5
+  number_of_infant_deaths_2005_2008: 1
+  infant_mortality_rate__deaths_per_1000_live_births__2005_2008: 1
+  percent_low_birthweight_2005_2008: 1.5
+  percent_multiple_births_2005_2008: 1.5
+  percent_publicly_financed_prenatal_care_2005_2008: 1.5
+  percent_teen_births_2005_2008: 1.5
+
+two:
+  geography: MyString
+  total_pop_year_2005: 1
+  age_0_9_year_2005: 1
+  age_65_above_year_2005: 1
+  per_capita_income_year_2000: 1.5
+  persons_living_below_200_percent_poverty_year_2000: 1
+  percent_all_persons_living_below_200_percent_poverty_level_year_2000: 1.5
+  percent_adequacy_prenatal_care__kotelchuck_: 1.5
+  percent_c_section_deliveries_2005_2008: 1.5
+  number_of_infant_deaths_2005_2008: 1
+  infant_mortality_rate__deaths_per_1000_live_births__2005_2008: 1
+  percent_low_birthweight_2005_2008: 1.5
+  percent_multiple_births_2005_2008: 1.5
+  percent_publicly_financed_prenatal_care_2005_2008: 1.5
+  percent_teen_births_2005_2008: 1.5

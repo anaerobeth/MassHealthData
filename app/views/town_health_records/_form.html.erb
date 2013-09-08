@@ -1,0 +1,77 @@
+<%= form_for(@town_health_record) do |f| %>
+  <% if @town_health_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@town_health_record.errors.count, "error") %> prohibited this town_health_record from being saved:</h2>
+
+      <ul>
+      <% @town_health_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :geography %><br>
+    <%= f.text_field :geography %>
+  </div>
+  <div class="field">
+    <%= f.label :total_pop_year_2005 %><br>
+    <%= f.number_field :total_pop_year_2005 %>
+  </div>
+  <div class="field">
+    <%= f.label :age_0_9_year_2005 %><br>
+    <%= f.number_field :age_0_9_year_2005 %>
+  </div>
+  <div class="field">
+    <%= f.label :age_65_above_year_2005 %><br>
+    <%= f.number_field :age_65_above_year_2005 %>
+  </div>
+  <div class="field">
+    <%= f.label :per_capita_income_year_2000 %><br>
+    <%= f.text_field :per_capita_income_year_2000 %>
+  </div>
+  <div class="field">
+    <%= f.label :persons_living_below_200_percent_poverty_year_2000 %><br>
+    <%= f.number_field :persons_living_below_200_percent_poverty_year_2000 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_all_persons_living_below_200_percent_poverty_level_year_2000 %><br>
+    <%= f.text_field :percent_all_persons_living_below_200_percent_poverty_level_year_2000 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_adequacy_prenatal_care__kotelchuck_ %><br>
+    <%= f.text_field :percent_adequacy_prenatal_care__kotelchuck_ %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_c_section_deliveries_2005_2008 %><br>
+    <%= f.text_field :percent_c_section_deliveries_2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_infant_deaths_2005_2008 %><br>
+    <%= f.number_field :number_of_infant_deaths_2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :infant_mortality_rate__deaths_per_1000_live_births__2005_2008 %><br>
+    <%= f.number_field :infant_mortality_rate__deaths_per_1000_live_births__2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_low_birthweight_2005_2008 %><br>
+    <%= f.text_field :percent_low_birthweight_2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_multiple_births_2005_2008 %><br>
+    <%= f.text_field :percent_multiple_births_2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_publicly_financed_prenatal_care_2005_2008 %><br>
+    <%= f.text_field :percent_publicly_financed_prenatal_care_2005_2008 %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_teen_births_2005_2008 %><br>
+    <%= f.text_field :percent_teen_births_2005_2008 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
